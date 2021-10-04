@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.icon:hover, .icon:focus  {
+  /* --secondaryText */
+  filter: invert(50%) sepia(49%) saturate(1362%) hue-rotate(310deg) brightness(100%) contrast(98%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (min-width: 375px) {
+  main {
+    position: absolute;
+    top: 8rem
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  main p {
+    font-size: 2rem;
+  }
+
+  main:not(:first-child) {
+    margin-top: 5rem;;
+  }
+
+  .klk {
+    margin-top: 1.5rem;
+    display: inline-block;
+  }
+
+  .klk:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .klk > span {
+    font-size: 0.6rem;
+  }
+
+  .timerNumber {
+    position: relative;
+    top: 22%;
+  }
+
+  .container {
+    width: 70px;
+    height: 76px;
+    background-color: var(--timerBody);
+    color: var(--secondaryText);
+    font-size: 2rem;
+    border-radius: 3px;
+  }
+
+  .top-half {
+    position: absolute;
+    height: 37.5px;
+    width: 70px;
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  #footer {
+    background-image: url("./images/pattern-hills.svg");
+    height: 197px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #footer > img {
+    position: relative;
+    top: 6rem;
+    margin: 0 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (min-width: 1440px) {
+  
 }
