@@ -11,7 +11,7 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Grayish blue: hsl(237, 18%, 59%)
+- Grayish blue: hsl(237, 18%, 59%) Hex #8486a9
 - Soft red: hsl(345, 95%, 68%)
 
 ### Neutral

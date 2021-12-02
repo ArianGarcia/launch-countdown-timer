@@ -1,0 +1,30 @@
+@import './_variables.scss';
+
+.icon:hover, .icon:focus  {
+  /* --secondaryText */
+  filter: invert(50%) sepia(49%) saturate(1362%) hue-rotate(310deg) brightness(100%) contrast(98%);
+}
+
+// The designs were created to the following widths:
+// - Mobile: 375px
+// - Desktop: 1440px
+
+footer {
+  background-image: url("../images/pattern-hills.svg");
+  height: 197px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+  img {
+    position: relative;
+    top: 6rem;
+    margin: 0 20px;
+  }
+}
+
+.icon.socialMedia {
+  height: 1.5rem;
+}
