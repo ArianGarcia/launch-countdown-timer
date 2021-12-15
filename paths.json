@@ -6,7 +6,7 @@
       "@styles/*": ["./assets/styles/*"],
       "@components/*": ["./components/*"],
       "@interfaces/*": ["./interfaces/*"],
-      "@tests/*": ["./tests/*"],
+      "@tests/*": ["./tests/*"]
     }
   }
 }
