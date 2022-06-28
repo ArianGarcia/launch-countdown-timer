@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import './_variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Red Hat Text';
+  font-size: 14px;
+  font-weight: 700;
+  background-color: $bgColor;
+  background-image: url("../images/bg-stars.svg");
+  color: #ffffff;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

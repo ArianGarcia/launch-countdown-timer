@@ -1,0 +1,117 @@
+@import './_variables.scss';
+
+// The designs were created to the following widths:
+// - Mobile: 375px ==>
+// - Desktop: 1440px ==>
+
+@media (min-width: 375px) {
+  main {
+    gap: 2rem;
+  }
+  
+  #timer {
+    gap: 0.7rem;
+  }
+  
+  .timer-card {
+    gap: 1rem;
+
+    .container {
+      font-size: 2.5rem;
+      padding: 0.7rem 0;
+    }
+    
+    .time-unit {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    gap: 5rem;
+  }
+  
+  #timer {
+    gap: 2rem;
+  }
+  
+  .timer-card {
+    gap: 1rem;
+
+    .container {
+      font-size: 3.5rem;
+      padding: 1rem 2rem;
+    }
+
+    .time-unit {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+main {
+  width: 90%;
+  height: calc(100vh - 12.3rem);
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainText {
+  display: grid;
+  align-self: end;
+  font-size: 1.3rem;
+  letter-spacing: 0.5rem;
+}
+
+#timer {
+  display: grid;
+  align-self: start;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+.timer-card {
+  display: grid;
+
+  .container {
+    color: $primaryText;
+    background: $primaryColor;
+    border-radius: 0.3rem;
+  }
+
+  .time-unit {
+    color: $secondaryText;
+    letter-spacing: 0.3rem;
+  }
+}
+
+footer {
+  background-image: url("../images/pattern-hills.svg");
+  background-position: 80%;
+  height: 12.3rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
+  img {
+    position: relative;
+    top: 8rem;
+    margin: 0 1.6rem;
+  }
+}
+
+.icon {
+  .socialMedia {
+    height: 1.5rem;
+  }
+
+  /* --secondaryText */
+  &:hover, &:focus  {
+    filter: invert(50%) sepia(49%) saturate(1362%) hue-rotate(310deg) brightness(100%) contrast(98%);
+  }
+}
